@@ -35,7 +35,27 @@ Google Meet
 
 - Can you tell me the software layers that a request goes through in our code, and where it ends up?
 
+    <details>
+    <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+    <div style="border:2px dashed #4a5568; padding:12px; border-radius:12px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+
+    <ol>
+    <li>Client layer</li>
+    <li>WebServer layer</li>
+    <li>Application layer</li>
+    <li>Service layer</li>
+    <li>Data Access layer</li>
+    <li>Resonser layer</li>
+    </ol>
+
+
+    </div>
+    </details><br />
+
 - What is ORM?
+    ~~~
+    ORM is an abstraction layer that allows us to manage database data as objects in a programming language.Instead of writing raw SQL queries directly, we work with classes, methods, and objects. The ORM translates these operations into SQL and executes them on the database.
+    ~~~
 
 - What is REST?
 
