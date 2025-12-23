@@ -38,27 +38,24 @@ Google Meet
 
 Write a function to calculate `pow(x, n)`.
 <details>
-<summary style="font-size:14px"><b><em>My answer</em></b></summary>
+<summary style="font-size:14px"><b><em>Alireza answer</em></b></summary>
 <div style="border:2px dashed #4a5568; padding:12px; border-radius:6px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
 ```python
-import sys
+def my_pow(x, n):
+    if n < 0:
+        return 1/recursive_pow(x, -1 * n)
+    else:
+        return recursive_pow(x, n)
 
-def pow(x: float, n: int) -> float:
-    res = 1
+def recursive_pow(x, n):
     if n == 0:
-        return res
-    while n > 0:
-        if n % 2 == 1:
-            res *= x
-        x *=x
-        n >>= 1
-    return res
+        return 1
+    if n == 1:
+        return x
+    else:
+        return x * recursive_pow(x, n-1)
 
-x = 10000
-n = 20000
-ans = pow(x, n)
-print(ans)
 ```
 </div>
 </details>
