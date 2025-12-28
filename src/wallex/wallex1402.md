@@ -36,7 +36,7 @@ Google Meet
 - Can you tell me the software layers that a request goes through in our code, and where it ends up?
 
     <details>
-    <summary style="font-size:14px"><b><em>Answer</em></b></summary>
+    <summary style="font-size:14px"><b><em>Alireza Answer</em></b></summary>
     <div style="border:2px dashed #4a5568; padding:12px; border-radius:12px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
 
     <ol>
@@ -53,13 +53,26 @@ Google Meet
     </details><br />
 
 - What is ORM?
-    ~~~
+    <details>
+    <summary style="font-size:14px"><b><em>Alireza Answer</em></b></summary>
+    <div style="border:2px dashed #4a5568; padding:12px; border-radius:12px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+
     ORM is an abstraction layer that allows us to manage database data as objects in a programming language.Instead of writing raw SQL queries directly, we work with classes, methods, and objects. The ORM translates these operations into SQL and executes them on the database.
-    ~~~
+
+    </div>
+    </details><br />
 
 - What is REST?
 
 - Suppose we want to sent 1 million notification and need request it to db how u handle it?
+    <details>
+    <summary style="font-size:14px"><b><em>Alireza Answer</em></b></summary>
+    <div style="border:2px dashed #4a5568; padding:12px; border-radius:12px; margin-top:8px;  background-color: rgba(74,85,104,0.15);">
+
+    First, we queue the notifications in Redis, then we process them with celery and send them with the scheduling and batching that we have determined ourselves.
+
+    </div>
+    </details><br />
 
 - When we want to know a user authenticated or not for some action, how know that and how we handle that?
 
